@@ -9,28 +9,72 @@
 
     <style>
       #titlebar{
-        text-align: center;
+    	text-align: center;
+		background-color: rgb(116,228,226);
+      }
+      #readme{
+      	text-align: start;
+      	float: left;
+      }
+      #reloadandpng{
+		text-align: end;
+	  }
+	  #png{
+	  	width: 100px;
+	  	height: 100px
+	  }
+      #indextitle{
+		text-align: center;
+		background-color: rgb(116,228,226,0.2);
+      }
+      #NGWindows{
+      	text-align: center;
+      }
+      #downloadtitle{
+      	text-align: center;
+      	background-color: rgb(116,228,226,0.2);
       }
       #ReleaseNote{
-        width: 840px;
-        height: 250px;
+        width: 100%;
+        height: 200px;
       }
     </style>
   </head>
   <body>
     <h1 id="titlebar">qwerty-XX ver.2.10</h1>
-    <h3><a href="https://hoyoqwerty.github.io/index.html">再読み込み</a></h3>
-    <img src="appicon.png" alt="qwerty-XX アイコン画像" width="100" height="100">
-    <h3>こちらはqwerty-XXのダウンロードページです。</h3>
-    <p>動作環境：WindowsXP, Vista, 7, 8, 8.1, 10, 11です。</p>
-    <p>※推奨はWindows10, 11です。<br>※WindowsXP, Vista, 7, 8, 8.1では一部機能が制限されます。</p>
-
-    <h2>qwerty-XX ver.2.10 ダウンロード</h2>
+    
+    <div id="readme">
+      <p>qwerty-XXとは、Windowsをさらに使いやすくするために<br>開発されたランチャーアプリです。</p>
+    </div>
+    
+    <div id="reloadandpng">
+      <h3 id="reload"><a href="https://hoyoqwerty.github.io/index.html">再読み込み</a></h3>
+      <div id="pmgimg"><img id="png" src="appicon.png" alt="qwerty-XX アイコン画像"></div>
+    </div>
+    
+    <h3 id="indextitle">こちらはqwerty-XXのダウンロードページです。</h3>
+	
+    <div id="OKWindows">
+      <ul>
+        動作可能なWindowsOS：
+        <li>Windows XP</li>
+        <li>Windows Vista</li>
+        <li>Windows 7</li>
+        <li>Windows 8</li>
+        <li>Windows 8.1</li>
+        <li>Windows 10 (推奨)</li>
+        <li>Windows 11 (推奨)</li>
+      </ul>
+    </div>
+    
+    <div id="NGWindows"><p>※WindowsXP, Vista, 7, 8, 8.1では一部機能が制限されます。</p></div>
+	
+    <h2 id="downloadtitle">qwerty-XX ver.2.10 ダウンロード</h2>
     <p>ダウンロード時に「不審なダウンロード」とみなされ、<br>お使いのブラウザによりブロックされることがあります。</p>
-
+	
     <ul>
-      <li><a href="qwerty-XX datas/qwerty-XX copier ver.2.10.exe" download="qwerty-XX copier ver.2.10.exe">qwerty-XX copier ver.2.10.exe</a></li>
-      <li><a href="qwerty-XX datas/qwerty-XX portable ver.2.10.zip" download="qwerty-XX portable vre.2.10.zip">qwerty-XX portable ver.2.10.zip</a></li>
+      <li>qwerty-XX copier ver.2.10.exe (インストーラー版)<br>　<a href="qwerty-XX datas/qwerty-XX copier ver.2.10.exe" download="qwerty-XX copier ver.2.10.exe">ダウンロード</a></li>
+      <li>qwerty-XX portable ver.2.10.zip (ポータブル版)<br>　<a href="qwerty-XX datas/qwerty-XX portable ver.2.10.zip" download="qwerty-XX portable vre.2.10.zip">ダウンロード</a></li>
     </ul>
     <p>
       ver.2.10 更新内容:<br>
