@@ -41,7 +41,7 @@
     </style>
   </head>
   <body>
-    <h1 id="titlebar">qwerty-XX ver.2.10</h1>
+    <h1 id="titlebar">qwerty-XX ver.2.20</h1>
     
     <div id="readme">
       <p>qwerty-XXとは、Windowsをさらに使いやすくするために<br>開発されたランチャーアプリです。</p>
@@ -69,31 +69,40 @@
     
     <div id="NGWindows"><p>※WindowsXP, Vista, 7, 8, 8.1では一部機能が制限されます。</p></div>
 	
-    <h2 id="downloadtitle">qwerty-XX ver.2.10 ダウンロード</h2>
+    <h2 id="downloadtitle">qwerty-XX ver.2.20 ダウンロード</h2>
     <p>ダウンロード時に「不審なダウンロード」とみなされ、<br>お使いのブラウザによりブロックされることがあります。</p>
 	
     <ul>
-      <li>qwerty-XX copier ver.2.10.exe (インストーラー版)<br>　<a href="qwerty-XX datas/qwerty-XX copier ver.2.10.exe" download="qwerty-XX copier ver.2.10.exe">ダウンロード</a></li>
-      <li>qwerty-XX portable ver.2.10.zip (ポータブル版)<br>　<a href="qwerty-XX datas/qwerty-XX portable ver.2.10.zip" download="qwerty-XX portable vre.2.10.zip">ダウンロード</a></li>
+      <li>qwerty-XX copier ver.2.20.exe (インストーラー版)<br>　<a href="qwerty-XX datas/qwerty-XX copier ver.2.20.exe" download="qwerty-XX copier ver.2.20.exe">ダウンロード</a></li>
+      <li>qwerty-XX portable ver.2.20.zip (ポータブル版)<br>　<a href="qwerty-XX datas/qwerty-XX portable ver.2.20.zip" download="qwerty-XX portable vre.2.20.zip">ダウンロード</a></li>
     </ul>
     <p>
-      ver.2.10 更新内容:<br>
+      ver.2.20 更新内容:<br>
       <textarea id="ReleaseNote" readonly>
-ver.2.10：2024/09/16 10:03
-・「スタートメニュー」に、ウィジェット機能を追加しました。
-・ウィジェット機能に既存のカレンダーと、新規のランチャーを追加しました。
-・「ランチャー」のマウススクロールのページ切り替え機能において、スクロール感度とスクロールの向きを設定できるようになりました。
-・「カレンダー」の年月の切り替えの処理を軽量化しました。
-・qwerty-XX起動時のまだ画面生成が終わっていない段階でも画面に背景画像などが反映されるようにしました。
-・タイトルバーと「qwerty-XX 設定」のいくつかの文字表記を変更しました。
-          
-・「スタートメニュー」の「Windows アプリケーション」内の「タスクマネージャー」が正常に起動しない不具合を修正しました。
-・バッテリーの残り時間の表記に異常が出る不具合を修正しました。
-・「ランチャー」のアイコンの読み込み方法を変更して、より早く読み込みできるようになりました。
+ver.2.20：2024/11/02 12:39
+・インターネット接続を利用した更新確認機能が追加されました。
+qwerty-XX起動時に自動的に確認が行われるのと(設定で無効化可能)、「アプリ情報」から確認を行うことが可能です。
+・インターネット接続を利用したqwerty-XX copierダウンロード機能が追加されました。
+またそれに伴いver.2.20以降のqwerty-XX本体とqwerty-XX copierとの間でリンクがされ、
+copierでのインストールパスが自動で入力されるようになりました。
+・qwerty-XX copierが高dpiに対応しました。これにより画面拡大率が変わっても、画面の画質が劣化せず表示されるようになります。
+・「アプリ情報」にて、「qwerty-XX ダウンロードページ(https://hoyoqwerty.github.io/index.html)」を開く機能を追加しました。
+
+・qwerty-XXに、「起動アニメーション機能」を追加しました。「MS-DOS(PC-98)風」と「Windows2000風」を用意しています。
+これからの更新でレパートリーは追加される予定で、かつ
+「qwerty-XX  設定」にて設定を無効化することも可能です。
+・「ランチャー」にて、「マクロランチャー機能」を追加しました。これにより一つのランチャーで、
+複数の動作をさせることが可能になりました。
+・「ランチャー」の標準ランチャーにて、「デフォルトで管理者権限で開く」機能を追加しました。
+
+・qwerty-XX再起動時に、qwerty-XXが終了せずにもう一つ起動してしまうことで、
+「既にqwerty-XXは起動しています。」と表示され、正しく再起動されない不具合を修正しました。
+・「ランチャー設定」にて、「ランチャータイプをランチャーのパスから取得して自動設定する」を有効にしている時に、手動でパスを入力しようとする際、
+HSP error 9が予期せず発生してしまう不具合を修正しました。
       </textarea>
     </p>
 
-    <p>このwebページの最終更新日：2024/11/02</p>
+    <p>このwebページの最終更新日：2024/11/03</p>
     <a href="https://github.com/hoyoqwerty/hoyoqwerty.github.io/tree/main/qwerty-XX%20datas" target="_blank" rel="noopener noreferrer">qwerty-XX github</a>
     <a href="https://twitter.com/hoyoqwerty" target="_blank" rel="noopener noreferrer">qwerty-XX 開発者Twitter</a>
   </body>
