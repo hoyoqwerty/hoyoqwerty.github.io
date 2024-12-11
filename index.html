@@ -9,39 +9,70 @@
 
     <style>
       #titlebar{
+      	max-width: 900px;
+      	margin-left: auto;
+      	margin-right: auto;
     	text-align: center;
 		background-color: rgb(116,228,226);
       }
       #readme{
-      	text-align: start;
-      	float: left;
+      	max-width: 900px;
+      	margin-left: auto;
+      	margin-right: auto;
+      	text-align: center;
       }
       #reloadandpng{
-		text-align: end;
+      	max-width: 900px;
+      	margin-left: auto;
+      	margin-right: auto;
+		text-align: center;
 	  }
 	  #png{
+	  	max-width: 900px;
+	  	margin-left: auto;
+      	margin-right: auto;
 	  	width: 100px;
 	  	height: 100px
 	  }
       #indextitle{
+      	max-width: 900px;
+      	margin-left: auto;
+      	margin-right: auto;
 		text-align: center;
 		background-color: rgb(116,228,226,0.2);
       }
       #NGWindows{
+      	max-width: 900px;
+      	margin-left: auto;
+      	margin-right: auto;
       	text-align: center;
       }
       #downloadtitle{
+      	max-width: 900px;
+      	margin-left: auto;
+      	margin-right: auto;
       	text-align: center;
       	background-color: rgb(116,228,226,0.2);
       }
-      #ReleaseNote{
+      #downloadtext{
+      	max-width: 900px;
+      	margin-left: auto;
+      	margin-right: auto;
+      	text-align: center;
+      }
+      #ReleaseNotebox{
         width: 100%;
         height: 200px;
+      }
+      #Normalleft{
+      	max-width: 900px;
+      	margin-left: auto;
+      	margin-right: auto;
       }
     </style>
   </head>
   <body>
-    <h1 id="titlebar">qwerty-XX ver.2.21</h1>
+    <h1 id="titlebar">qwerty-XX ver.3.00</h1>
     
     <div id="readme">
       <p>qwerty-XXとは、Windowsをさらに使いやすくするために<br>開発されたランチャーアプリです。</p>
@@ -54,7 +85,7 @@
     
     <h3 id="indextitle">こちらはqwerty-XXのダウンロードページです。</h3>
 	
-    <div id="OKWindows">
+    <div id="Normalleft">
       <ul>
         動作可能なWindowsOS：
         <li>Windows XP</li>
@@ -67,41 +98,62 @@
       </ul>
     </div>
     
-    <div id="NGWindows"><p>※WindowsXP, Vista, 7, 8, 8.1では一部機能が制限されます。</p></div>
+    <div id="NGWindows">
+      <p>※WindowsXP, Vista, 7, 8, 8.1では一部機能が制限されます。</p>
+      <p>※Windows2000以前でのWindowsでは使用できません。</p>
+    </div>
 	
-    <h2 id="downloadtitle">qwerty-XX ver.2.21 ダウンロード</h2>
-    <p>ダウンロード時に「不審なダウンロード」とみなされ、<br>お使いのブラウザによりブロックされることがあります。</p>
+    <h2 id="downloadtitle">qwerty-XX ver.3.00 ダウンロード</h2>
+    <p id="downloadtext">ダウンロード時に「不審なダウンロード」とみなされ、<br>お使いのブラウザによりブロックされることがあります。</p>
 	
-    <ul>
-      <li>qwerty-XX copier ver.2.21.exe (インストーラー版)<br>　<a href="qwerty-XX datas/qwerty-XX copier ver.2.21.exe" download="qwerty-XX copier ver.2.21.exe">ダウンロード</a></li>
-      <li>qwerty-XX portable ver.2.21.zip (ポータブル版)<br>　<a href="qwerty-XX datas/qwerty-XX portable ver.2.21.zip" download="qwerty-XX portable ver.2.21.zip">ダウンロード</a></li>
+    <ul id="Normalleft">
+      <li>qwerty-XX copier ver.3.00.exe (インストーラー版)<br>　<a href="qwerty-XX datas/qwerty-XX copier ver.3.00.exe" download="qwerty-XX copier ver.3.00.exe">ダウンロード</a></li>
+      <li>qwerty-XX portable ver.3.00.zip (ポータブル版)<br>　<a href="qwerty-XX datas/qwerty-XX portable ver.3.00.zip" download="qwerty-XX portable ver.3.00.zip">ダウンロード</a></li>
     </ul>
-    <p>
-      ver.2.21 更新内容:<br>
-      <textarea id="ReleaseNote" readonly>
-ver.2.21：2024/11/05 21:53
-・こちら(https://x.com/hoyoqwerty/status/1853778358552940692)にて報告しました不具合は、
-「qwerty-XX 設定」の、「qwerty-XX起動時にアップデートの確認を行わないようにする」によるものであると判明しました。
-この設定が有効になっている場合にHSP error 3が発生します。また新規作成時のデフォルトで有効設定にもなっていました。
+    <p id="Normalleft">
+      ver.3.00 更新内容:<br>
+      <textarea id="ReleaseNotebox" readonly>
+ver.3.00：2024/12/09 11:45
+・「メディアプレーヤー」を追加しました。
+・「qwerty-XX アプリケーション」に「メディアプレーヤー」を追加しました。
+・ウィジェット機能にメディアプレーヤーを追加しました。これによりqwerty-XX最小化時や
+他のqwerty-XXアプリケーション実行時でのバッググラウンド再生が可能になります。
+・qwerty-XXに、「終了アニメーション機能」を追加しました。設定の種類と割り当て方法は、
+「起動アニメーション機能」と同一のものになっています。
+・「qwerty-XX 設定」にて、「起動・終了アニメーションの速度を高速にする」が追加されました。
+この設定によりそれぞれのアニメーションの描画速度が約5倍にまで高速化することができます。
+・起動・終了アニメーションの基礎的な速度を一部速くしました。
+・「アプリ情報」にて、バージョン情報ダイアログの表示内容を一部追加しました。
+・「アプリ情報」にて、「Release Note.txtを開く」を追加しました。
+・qwerty-XXのタイトルバー以外をドラッグしてもウィンドウの移動ができるようになりました。
+・qwerty-XX スタートメニューに「ディスプレイの電源オフ」を追加しました。
+・画面解像度、色度、画面拡大率の変更を自動検知し、変更後の設定に対応するために
+qwerty-XXを再起動するかどうかを確認するダイアログが表示されるようにしました。
+・qwerty-XXにバージョン情報の設定がなされるようになりました。
+・qwerty-XX スタートメニューの「Windows コマンド」に、
+「Windows システム評価ツールを使用する(winsat formalを実行する)」を追加しました。
 
-現在ver.2.20.1においてこの不具合は修正され、有効になっていてもHSP error 3はもう発生しません。
-また新規作成時のデフォルトも無効設定に変更しました。
+・「ランチャー」にて、「ランチャー内容の入れ替え」を行うとき、入れ替えるランチャーが、
+マクロランチャーのどれかの中で「ランチャーを開く」で指定されている場合、
+入れ替えに応じて、マクロランチャーの設定も連動して変更するように変更しました。
+・「qwerty-XX 設定」にて、「基本設定」からいくつかの設定項目を「起動・終了設定」と「ランチャー設定」へ
+移動させました。
+・qwerty-XXの画面の切り替わりのタイミングごとに設定が保存されるようになりました。
 
-・更新確認に使用される「cnvutf8toansi.exe」が処理実行後、終了せずプロセスに常駐し続ける不具合を修正しました。
-・マクロランチャーモードの「通常パスを開く」と、「待機する」の二つを追加、編集する時に、
-qwerty-XXで使用される識別子(split命令で使用するもの)である「\\\\」、「,,,,」、「||||||||」が文字に含まれる際に、
-続行できないようにダイアログを出すようにしました。
-・マクロランチャーモードの「ランチャー設定」にて、マクロ追加で「待機する」を連続して追加すると、
-待機秒数が正しい数にならない不具合を修正しました。
+・qwerty-XXの終了音が正常に再生されない不具合を修正しました。
+・qwerty-XXのバージョン確認の方法を一部修正しました。
       </textarea>
     </p>
     
-    <p>qwerty-XXの先代アプリ「qwerty-X」</p>
-    <ul>
+    <p id="Normalleft">qwerty-XXの先代アプリ「qwerty-X」</p>
+    <ul id="Normalleft">
       <li>qwerty-X portable ver.20.00.zip (ポータブル版)<br>　<a href="qwerty-XX datas/qwerty-X portable ver.20.00.zip" download="qwerty-X portable ver.20.00.zip">ダウンロード</a></li>
     </ul>
-    <p>このwebページの最終更新日：2024/11/19</p>
-    <a href="https://github.com/hoyoqwerty/hoyoqwerty.github.io/tree/main/qwerty-XX%20datas" target="_blank" rel="noopener noreferrer">qwerty-XX github</a>
-    <a href="https://twitter.com/hoyoqwerty" target="_blank" rel="noopener noreferrer">qwerty-XX 開発者Twitter</a>
+    <p id="Normalleft">このwebページの最終更新日：2024/11/19</p>
+    <p id="Normalleft">
+      <a href="https://github.com/hoyoqwerty/hoyoqwerty.github.io/tree/main/qwerty-XX%20datas" target="_blank" rel="noopener noreferrer">qwerty-XX github</a>
+      <a href="https://twitter.com/hoyoqwerty" target="_blank" rel="noopener noreferrer">qwerty-XX 開発者Twitter</a>
+      <a href="https://www.youtube.com/@hoyoqwerty" target="_blank" rel="noopener noreferrer">qwerty-XX 開発者youtubeチャンネル</a>
+    </p>
   </body>
 </html>
