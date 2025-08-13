@@ -13,7 +13,7 @@
       	margin-left: auto;
       	margin-right: auto;
     	text-align: center;
-		background-color: rgb(116,228,226);
+		background-color: rgb(000,128,192);
       }
       #readme{
       	max-width: 900px;
@@ -39,7 +39,7 @@
       	margin-left: auto;
       	margin-right: auto;
 		text-align: center;
-		background-color: rgb(116,228,226,0.2);
+		background-color: rgb(000,128,192,0.2);
       }
       #NGWindows{
       	max-width: 900px;
@@ -52,7 +52,7 @@
       	margin-left: auto;
       	margin-right: auto;
       	text-align: center;
-      	background-color: rgb(116,228,226,0.2);
+      	background-color: rgb(000,128,192,0.2);
       }
       #downloadtext{
       	max-width: 900px;
@@ -62,7 +62,7 @@
       }
       #ReleaseNotebox{
         width: 100%;
-        height: 200px;
+        height: 650px;
       }
       #Normalleft{
       	max-width: 900px;
@@ -72,7 +72,7 @@
     </style>
   </head>
   <body>
-    <h1 id="titlebar">qwerty-XX ver.4.10</h1>
+    <h1 id="titlebar">qwerty-XX ver.5.00</h1>
     
     <div id="readme">
       <p>qwerty-XXとは、Windowsをさらに使いやすくするために<br>開発されているランチャーアプリです。</p>
@@ -110,62 +110,61 @@
       <p>※Windows2000以前でのWindowsでは使用できません。</p>
     </div>
 	
-    <h2 id="downloadtitle">qwerty-XX ver.4.10 ダウンロード</h2>
+    <h2 id="downloadtitle">qwerty-XX ver.5.00 ダウンロード</h2>
     <p id="downloadtext">ダウンロード時に「不審なダウンロード」とみなされ、<br>お使いのブラウザによりブロックされることがあります。</p>
 	
     <ul id="Normalleft">
-      <li>qwerty-XX copier ver.4.10.exe (インストーラー版)<br>　<a href="qwerty-XX datas/qwerty-XX copier ver.4.10.exe" download="qwerty-XX copier ver.4.10.exe">ダウンロード</a></li>
-      <li>qwerty-XX portable ver.4.10.zip (ポータブル版)<br>　<a href="qwerty-XX datas/qwerty-XX portable ver.4.10.zip" download="qwerty-XX portable ver.4.10.zip">ダウンロード</a></li>
+      <li>qwerty-XX copier ver.5.00.exe (インストーラー版)<br>　<a href="qwerty-XX datas/qwerty-XX copier ver.5.00.exe" download="qwerty-XX copier ver.5.00.exe">ダウンロード</a></li>
+      <li>qwerty-XX portable ver.5.00.zip (ポータブル版)<br>　<a href="qwerty-XX datas/qwerty-XX portable ver.5.00.zip" download="qwerty-XX portable ver.5.00.zip">ダウンロード</a></li>
     </ul>
     <p id="Normalleft">
-      ver.4.10 更新内容:<br>
+      ver.5.00 更新内容:<br>
       <textarea id="ReleaseNotebox" readonly>
-ver.4.10 20639：2025/04/06 09:40
+ver.5.00 25237：2025/08/14 02:29
 ---新機能追加---
-・qwerty-XX copierにて、デスクトップにqwerty-XXのショートカットを生成する機能を実装しました。
-・「カレンダー」にて、カレンダー形式のUIを新たに追加しました。
-従来のリスト形式と切り替えて使用することができます。
-・qwerty-XXのメインウィンドウをフルスクリーンで実行する機能を実装しました。
-・qwerty-XXの画面拡大率を手動で調整できる機能を実装しました。
-・「ランチャー」にて、ランチャーボタンの文字色を自由に変更できる機能を実装しました。
-・「ランチャー」にて、ランチャーの番号をタイプすることでそのランチャーを開く機能を実装しました。
-・qwerty-XXの画面を切り替えるたびに、背景画像を変更するスライドショー機能を実装しました。
-・「Windows アプリケーション」に「Windows スライドショー」を追加しました。
-・「設定」にて、デフォルト設定に戻す機能を実装しました。
+・「テキストエディター」を追加しました。
+・「qwerty-XX アプリケーション」に「テキストエディター」を追加しました。
+・ランチャーボタンから「テキストエディター」を開けるようになりました。
+・「qwerty-XX サブウィンドウモードシステム」を実装しました。
+これにより対応するqwerty-XXアプリケーションを複数のウィンドウで
+同時起動できるようになりました。
+現時点で対応するqwerty-XXアプリケーションは、
+「インターネットブラウザー」、「テキストエディター」の二つです。
+それぞれのメニューからこの機能をご利用いただけます。
+・「ランチャー」から、新たに「メディアプレーヤー」と「テキストエディター」を
+開けるようになりました。
+・「設定」にて、設定項目の検索ができるようになりました。
+・デフォルトで背景画像が付属するようになりました。
 
 ---機能変更・仕様変更---
-・qwerty-XX、qwerty-XX copierにてそれらプログラムが、
-書き込みに管理者権限が必要なフォルダ内で動作していることを確認したとき、
-起動や動作がブロックされるようになりました。
-これにより、ファイルの書き込みがブロックされなくなるようになり、
-「インターネットブラウザー」などの機能の動作の安定性が高くなります。
-・バッテリー情報がなしの時(デスクトップPCなど)に、
-右上部分のバッテリー情報の表示が消えるようになりました。
-・「インターネットブラウザー」の一部エラーダイアログの文言を変更・追加しました。
-・「インターネットブラウザー」のUIを一部変更しました。
-・「Windows アプリケーション」の「Windows 標準アプリケーション」の
-OS制限方法を変更し、「Windows クロック」のみOS制限を受けるように変更しました。
-・OSシャットダウン時にシャットダウンコマンドに待機時間を設けました。
-・OS制限などで無効化されている項目の内容を変更し、
-見るだけで無効化されていることが分かるようにしました。
-・「ランチャー」にて、ランチャーボタンのツールチップの記載を変更しました。
-・「アプリ情報」にて、バージョン情報ダイアログの表示方法を変更しました。
-
-・qwerty-XXフォルダ内にて、qwerty-XXで使用されるファイル等の配置を変更しました。
-qwerty-XX起動時に配置がチェックされ、自動で配置を変更されるようになります。
-この動作はqwerty-XXフォルダ以外に影響を与えるものではありません。
+・「設定」にて、UIを全面的に改修し、各設定項目をさらに分割しました。
+・「設定」のデフォルト値をいくつか変更しました。
+・タイトルバーの表記を変更し、qwerty-XXの名称が最後に来るように変更しました。
+・「MS-DOS(PC-98)風」の起動アニメーション時のメモリカウント表示にて、
+メモリサイズの単位をKBかMB表記かを選ぶことができるようにしました。
+・バッチファイル実行時に実行されているウィンドウのタイトルバーに、
+実行内容の説明が表示されるようになりました。
+・「Windows アプリケーション」の「Windows 設定」がWindows8、8.1又はそれに相当する
+Windowsで使用できるようになりました。
+・「Windows アプリケーション」の「Windows コマンド」の一部項目が、
+Windows7相当のOSで実行できなくなりました。(動作不能が判明したため)
+・起動時のランチャー読み込みの方法を変更し、
+より高速に読み込みがされるようにしました。
+・起動アニメーションの「MS-DOS(PC-98風)」の表示内容を一部変更・追加しました。
 
 ---不具合修正---
-・Windows VistaまたはWindows Server 2008を使用しているとき、
-フォントの自動設定で「Meiryo UI(メイリオ)」が自動選択されるようになりました。
-・「Windows コマンド」の「Windows システム評価ツールを使用する(winsat formalを実行する)」を
-バッテリーを使用している状態でないのにバッテリーを使用していると表示され、
-実行できない不具合を修正しました。
-・「カレンダー」にて、カレンダー項目切り替えに時間がかかりすぎる不具合を修正しました。
-・「スタートメニュー」の「Windows アプリケーション」の「Windows システム評価ツールを使用する」にて、
-AC電源を使用しているのに、バッテリー使用状態と表示され実行できない不具合を修正しました。
-・「インターネットブラウザー」にて、「新しいタブ」ページを規定のブラウザに転送しようとすると
-エラーが出てしまう不具合を修正しました。
+・拡大率設定が100%以外の時に発生するUIの位置ずれを改善しました。
+・タイトルバー以外をドラッグしてもウィンドウを動かすことのできる機能が、
+「スタートメニュー」にて、機能していなかった不具合を修正しました。
+・「カレンダー」にて、予定の適用・キャンセル後に、
+カレンダーの項目に位置ずれが発生する不具合を修正しました。
+・「カレンダー」にて、カレンダーの項目上に表示される予定の内容を表す文字が、
+項目内からはみ出てしまう不具合を修正しました。
+・「カレンダー」にて、予定の適用後に、
+項目の一番下の右から二番目の項目のボタンが消失し、操作不能になる不具合を修正しました。
+・「設定」にて、「ランチャー設定」の「ランチャーボタンのデザイン」にて、
+「現在のページの内容をデフォルトに戻す」が表示されていなかった不具合を修正しました。
+・マクロランチャー編集時のウィンドウ画面に存在したいくつかの不具合を修正しました。
       </textarea>
     </p>
     
@@ -174,7 +173,7 @@ AC電源を使用しているのに、バッテリー使用状態と表示され
     <ul id="Normalleft">
       <li>qwerty-XXの過去verはこちらから。趣味で遊んでみたい人向け。<br>　<a href="oldversion.html">過去verダウンロードページ</a></li>
     </ul>
-    <p id="Normalleft">このwebページの最終更新日：2025/04/07</p>
+    <p id="Normalleft">このwebページの最終更新日：2025/08/14</p>
     <p id="Normalleft">
       <a href="https://github.com/hoyoqwerty/hoyoqwerty.github.io/tree/main/qwerty-XX%20datas" target="_blank" rel="noopener noreferrer">qwerty-XX github</a>
       <a href="https://twitter.com/hoyoqwerty" target="_blank" rel="noopener noreferrer">qwerty-XX 開発者Twitter</a>
